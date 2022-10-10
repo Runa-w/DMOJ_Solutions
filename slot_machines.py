@@ -25,4 +25,4 @@ elif machine = 2:
 
 plays = plays + 1
 
-print('Martha plays', plays, 'times before going broke.')
+print(f'Martha plays {plays} times before going broke.')
