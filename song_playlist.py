@@ -15,8 +15,8 @@ while button != 4:
             songs = songs[-1] + songs[:-1]
         elif button == 3:
             songs = songs[1] + songs[0] + songs[2:]
-output = ""
+output = ''
 
 for song in songs:
-    output = output + song + " "
+    output = output + song + ' '
 print(output[:-1])
