@@ -14,6 +14,12 @@ for dataset in range(10):
         students = int(num_students * proportion)
         students_per_year.append(students)
 
+    counted = sum(students_per_year)
+    uncounted = num_students - counted
+    most = max(students_per_year)
+    where = students_per_year.index(most)
+    students_per_year[where] = students_per_year[where] + uncounted
+
     total_raised = 0
 
 for i in range(len(students_per_year)):
